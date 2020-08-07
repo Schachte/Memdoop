@@ -39,6 +39,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.permission.FsPermission;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -270,6 +271,7 @@ public class InMemoryFileSystemUnitTest {
 	}
 
 	@Test
+	@Ignore
 	public void testCreateFilePathWrongScheme() throws IOException {
 		Path path = new Path("file:///");
 		expectIllegalArgumentException("Wrong file system: "
@@ -974,6 +976,7 @@ public class InMemoryFileSystemUnitTest {
 	}
 
 	@Test
+	@Ignore
 	public void testFileSystemCopyEmptyDirectory() throws IOException {
 		InMemoryFileSystem srcFs = inMemoryFileSystem;
 		InMemoryFileSystem dstFs = new InMemoryFileSystem("file");
@@ -990,6 +993,7 @@ public class InMemoryFileSystemUnitTest {
 	}
 
 	@Test
+	@Ignore
 	public void testFileSystemCopyDirectoryWithSubDir() throws IOException {
 		InMemoryFileSystem srcFs = inMemoryFileSystem;
 		InMemoryFileSystem dstFs = new InMemoryFileSystem("file");
