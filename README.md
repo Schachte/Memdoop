@@ -1,6 +1,10 @@
 In-Memory Filesystem for Hadoop
 ========================
 
+### Tests
+
+[![Build Status](https://travis-ci.org/Schachte/Memdoop.svg?branch=master)](https://travis-ci.org/Schachte/Memdoop)
+
 This is a memory based implementation of the `hadoop.fs.FileSystem`. It is 
 designed to be used for testing code written for the Hadoop environment. 
 
